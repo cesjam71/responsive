@@ -1,0 +1,55 @@
+.boton {
+	background: red;
+	color:  #fff;
+}
+.titulo {
+	color:  blue;
+	font-size: 40px;
+}
+.caja1, .caja2 {
+	width: 45%;
+	float: left;
+	border: 2px solid red;
+	height: 400px;
+}
+.caja1 { background: blue; }
+.caja2 { background: orange; }
+
+@media (max-width: 1000px) {
+	.boton {
+		background: blue;
+	}
+	.titulo {
+		color:  green;
+	}
+}
+@media (max-width: 500px) {
+	.boton {
+		background: orange;
+	}
+	.caja1, .caja2 {
+		width: 100%;
+	}
+}
+@media (max-width:  700px) and (min-width: 500px) {
+	.boton {
+		background: black;
+	}
+}
+@media print {
+	.titulo {
+		font-size: 140px;
+	}
+	.boton {
+		display: none;
+	}
+}
+
+/* NO COPIAR (TE JALO SI COPIAS)
+
+En el index.html agregar una etiqueta H1 con su nombre completo. Usando los media querys van a cambiar el color de letra segun el ancho de pantalla:
+
+- Inicialmente color azul y fonts-size 40px
+- Maximo 1000px color verde
+- Maximo 800px y minimo 500px color anaranjado
+- Maximo 500px color rojo y fonts-size 20px  */ 
